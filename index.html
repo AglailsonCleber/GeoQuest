@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GeoQuest</title>
+</head>
+<body>
+    <header>
+        <h1>GeoQuest</h1>
+    </header>
+    
+    <section id="containerQuestions">
+        <h2>Questões</h2>
+        <p>FUVEST 2018<br>  O conceito de erosão apresenta definições mais amplas ou mais restritas. A mais abrangente envolve os processos de denudação da superfície terrestre de forma geral, incluindo desde os processos de intemperismo de todos os tipos até os de transporte e deposição de material. Outro conceito, mais restrito, envolve apenas o deslocamento do material intemperizado, seja solo ou rocha, por agentes de transporte como a água corrente, o vento, o gelo ou a gravidade, produzindo formas erosivas características.<br><br>Fairbridge.The Encyclopedia of Geomorphology, 1968. Adaptado.<br><br>Exemplo de processo ao qual se aplica o conceito mais restrito de erosão é:</p>
+    </section>
+    <section id="containerAlternatives">
+        <h2>Alternativas</h2>
+        <ol>
+            <li><button id="A" class="alternatives btn">A formação de rochas.</button></li>
+            <li><button id="B" class="alternatives btn">A oxidação de rochas.</button></li>
+            <li><button id="C" class="alternatives btn">A formação de sulcos no solo.</button></li>
+            <li><button id="D" class="alternatives btn">A formação de concreções no solo.</button></li>
+            <li><button id="E" class="alternatives btn">O vulcanismo da crosta.</button></li>
+        </ul>
+    </section>
+    <section id="containerVideo" class="hidden">
+        <video id="video" class="hidden">
+            <source src="video/IMG_5045.mp4" type="video/mp4">
+            <source src="video/IMG_5045.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+        <br>
+        <button class="btn" onclick="playPause(); ">Play/Pause</button> 
+    </section>
+    <section id="containerButton">
+        <button id="deliver" class="btn">Entregar</button>
+    </section>
+    <footer>
+        <div>
+            <p>&copy; Todos os direitos reservados 2022</p>
+            <p>Desenvolvido por: Tamiris Aquino</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+</body>
+</html>

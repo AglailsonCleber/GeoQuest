@@ -1,0 +1,82 @@
+body{
+    height: 100%;
+    width: 920px;
+    margin: auto;
+}
+
+
+header{
+    color: azure;
+    background-color: black;
+    padding: 2px 40px;
+}
+
+ol li{
+    list-style: upper-latin;
+    color: azure;
+    padding: 4px;
+}
+
+footer{
+    color: azure;
+    background-color: black;
+    padding: 2px;
+    margin: auto;
+    text-align: center;
+}
+
+#containerQuestions{
+    padding: 4px 50px;
+    margin: auto;
+}
+
+#containerAlternatives{
+    color: azure;
+    background-color: black;
+    padding: 4px 50px;
+    margin: auto;
+}
+
+#containerButton{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 50px 10px 50px;
+    margin: auto;
+}
+
+#containerVideo{
+    color: azure;
+    background-color: black;
+}
+
+#deliver{
+    border-radius: 10%;
+    padding: 15px;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: azure;
+    background-color: black;
+}
+
+.video{
+    height: 420px;
+    width: 910px; 
+    margin: 10px;
+    padding: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+.selected{
+    color: azure;
+    background-color: black;
+}
