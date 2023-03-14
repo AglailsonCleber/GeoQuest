@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>GeoQuest</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoQuest</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>GeoQuest</h1>
-    </header>
-    
-    <section id="containerQuestions">
-        <h2>Questões</h2>
-        <p>FUVEST 2018<br>  O conceito de erosão apresenta definições mais amplas ou mais restritas. A mais abrangente envolve os processos de denudação da superfície terrestre de forma geral, incluindo desde os processos de intemperismo de todos os tipos até os de transporte e deposição de material. Outro conceito, mais restrito, envolve apenas o deslocamento do material intemperizado, seja solo ou rocha, por agentes de transporte como a água corrente, o vento, o gelo ou a gravidade, produzindo formas erosivas características.<br><br>Fairbridge.The Encyclopedia of Geomorphology, 1968. Adaptado.<br><br>Exemplo de processo ao qual se aplica o conceito mais restrito de erosão é:</p>
-    </section>
-    <section id="containerAlternatives">
-        <h2>Alternativas</h2>
-        <ol>
-            <li><button id="A" class="alternatives btn">A formação de rochas.</button></li>
-            <li><button id="B" class="alternatives btn">A oxidação de rochas.</button></li>
-            <li><button id="C" class="alternatives btn">A formação de sulcos no solo.</button></li>
-            <li><button id="D" class="alternatives btn">A formação de concreções no solo.</button></li>
-            <li><button id="E" class="alternatives btn">O vulcanismo da crosta.</button></li>
-        </ul>
-    </section>
-    <section id="containerVideo" class="hidden">
-        <video id="video" class="hidden">
-            <source src="video/IMG_5045.mp4" type="video/mp4">
-            <source src="video/IMG_5045.webm" type="video/webm">
-            Your browser does not support HTML video.
-        </video>
-        <br>
-        <button class="btn" onclick="playPause(); ">Play/Pause</button> 
-    </section>
-    <section id="containerButton">
-        <button id="deliver" class="btn">Entregar</button>
-    </section>
-    <footer>
-        <div>
-            <p>&copy; Todos os direitos reservados 2022</p>
-            <p>Desenvolvido por: Tamiris Aquino</p>
-        </div>
-    </footer>
-    <script type="text/javascript" src="./scripts/scripts.js"></script>
+  <header>
+    <h1 id="main-title">GeoQuest</h1>
+  </header>
+
+  <div id="init-container">
+    <div id="display-init">
+      <p>Olá amigo!</p>
+      <br><p>O GeoQuest é um quiz geográfico que tem por objetivo abordar os temas sobre geomorfologia de forma interativa e lúdica. Prepare-se para o vestibular se divertindo.</p>
+      <br><p>Boa Sorte e bom teste!</p>
+      <button id="btnInit" class="btn">Iniciar Quiz</button>
+    </div>
+  </div>
+
+  <!-- QUIZZ CONTAINER -->
+  <div id="quizz-container" class="hide">
+    <p id="question">
+      <span id="question-number">1</span> - <span id="question-text">Qual é a unidade de medida para metros?</span>
+    </p>
+    <div id="answers-box">
+      <button><span class="btn-letter">a</span> <span class="question-answer">Acontece próximo à crosta
+          terrestre.</span></button>
+      <button><span class="btn-letter">b</span> <span class="question-answer">É oriundo exclusivamente de regiões
+          oceânicas.</span></button>
+      <button><span class="btn-letter">c</span> <span class="question-answer">Só atua em rochas
+          magmáticas.</span></button>
+      <button><span class="btn-letter">d</span> <span class="question-answer">Só pode ocorrer após o processo de
+          sedimentação das rochas.</span></button>
+      <button><span class="btn-letter">e</span> <span class="question-answer">Ocorre somente em locais de alta pressão e
+          com temperaturas elevadas.</span></button>
+    </div>
+  </div>
+
+  <!-- TEMPLATE RESPOSTA -->
+  <button class="answer-template hide"><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+
+  <!-- IFRAME -->
+  <div id="iframe-container" class="hide">
+    <div id="display-iframe">
+      <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
+        allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div>
+        <button id="btnIframe" class="btn">Próxima questão.</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCORE BOARD -->
+  <div id="score-container" class="hide">
+    <h2>Parabéns</h2>
+    <p id="display-score"><span>90</span>%</p>
+    <p>Você acertou <span id="correct-answers">0</span> de <span id="questions-qty">10</span> perguntas</p>
+    <button id="restart">Refazer quizz!</button>
+    <button id="form" class="btn">Preencher Formulário</button>
+  </div>
+
+  <div id="form-container" class="hide">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBuqlosVtOLCmmzGCDtkGeQyEFJP2E-rOQlpsUVAzn4MpngQ/viewform?embedded=true" width="560" height="482" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+  </div>
+
+  <footer>
+    <p>&copy; Todos os direitos reservados 2022</p>
+    <p>Desenvolvido por: Tamiris Aquino</p>
+  </footer>
 </body>
+
 </html>
