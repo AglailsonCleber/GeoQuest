@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }
         res.status(200).json({ success: true, data: question });
         // res.status(200).json( question );
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Error fetching question:', error);
         res.status(500).json({ success: false, message: 'Internal Server Error' });
     }
